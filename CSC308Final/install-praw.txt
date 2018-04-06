@@ -1,0 +1,5 @@
+Run the following command from a Windows command prompt window: 
+	
+	python -m pip install praw
+
+*Note: Do NOT run from a Python interpreter window.
