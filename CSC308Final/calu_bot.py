@@ -9,6 +9,7 @@ import praw
 import config
 
 # Import login credentials
+import credentials
 
 def login():
     obj = praw.Reddit(username = credentials.username,
