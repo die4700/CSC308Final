@@ -25,6 +25,9 @@
     <Compile Include="config.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="credentials.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="install-praw.txt" />
