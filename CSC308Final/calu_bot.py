@@ -2,8 +2,13 @@
 # Brittani Kiger
 # Christopher Lytle
 
+# Import praw
 import praw
+
+# Import local config file
 import config
+
+# Import login credentials
 
 def login():
     obj = praw.Reddit(username = config.username,

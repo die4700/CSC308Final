@@ -260,5 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 
-# config.py
-config.py
+# credentials.py contain login credentials
+credentials.py
