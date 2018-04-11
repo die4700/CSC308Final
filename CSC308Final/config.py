@@ -1,4 +1,5 @@
 # Login information
+# Comment to test gitignore
 
 username = ""
 password = ""
