@@ -24,6 +24,7 @@
     <Compile Include="calu_bot.py" />
     <Compile Include="config.py">
       <SubType>Code</SubType>
+      <Publish>False</Publish>
     </Compile>
   </ItemGroup>
   <ItemGroup>

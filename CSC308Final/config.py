@@ -1,3 +1,5 @@
+# Login information
+
 username = ""
 password = ""
 client_id = ""
