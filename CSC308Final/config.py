@@ -1,5 +1,6 @@
 # Login information
 # Comment to test gitignore
+# Removed
 
 username = ""
 password = ""

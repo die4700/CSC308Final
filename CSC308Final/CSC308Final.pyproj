@@ -22,10 +22,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="calu_bot.py" />
-    <Compile Include="config.py">
-      <SubType>Code</SubType>
-      <Publish>False</Publish>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="install-praw.txt" />
