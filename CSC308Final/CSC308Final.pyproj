@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fca49a21-f8f0-454d-b93d-95d5e9ec8fa5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>calu_bot.py</StartupFile>
+    <StartupFile>gui.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="credentials.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gui.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
