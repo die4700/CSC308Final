@@ -21,13 +21,8 @@ def login():
     return obj
 
 # Function that searches for string within comments on /r/test
-def bot(obj):
-    for comment in obj.subreddit('test').comments(limit=25):
-        if "test" in comment.body:
-            print("String found!")
+def bot(obj, sub1, str1):
 
-# Creates login object
-obj = login()
-
-# Runs bot using login object
-bot(obj)
+    for comment in obj.subreddit(sub1).comments(limit=25):
+        if str1 in comment.body:
+            print("Found the string: ", sub1, " in ", comment.body)

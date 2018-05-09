@@ -1,0 +1,53 @@
+# Alexander Dietz
+# Brittani Kiger
+# Christopher Lytle
+
+# Import tkinter
+import tkinter
+import tkinter.messagebox
+
+# Import other
+from calu_bot import bot
+from calu_bot import login
+import calu_bot
+
+class myGUI:
+    def __init__(self):
+
+        # Create main window widget.
+        self.main_window = tkinter.Tk()
+
+        # Create window frames
+        self.top_frame = tkinter.Frame(self.main_window)
+        self.mid_frame = tkinter.Frame(self.main_window)
+        self.bottom_frame = tkinter.Frame(self.main_window)
+
+        # Create widgets and labels.
+        self.label1 = tkinter.Label(self.top_frame, text = 'Enter a subreddit to search.')
+        self.text1 = tkinter.Entry(self.top_frame, width = 15)
+        self.label2 = tkinter.Label(self.mid_frame, text = 'Enter a string to search for.')
+        self.text2 = tkinter.Entry(self.mid_frame, width = 15)
+        self.submit1 = tkinter.Button(self.bottom_frame, text = 'Submit', command=self.getString)
+
+        # Pack widgets.
+        self.label1.pack(side = 'left')
+        self.text1.pack(side = 'right')
+        self.label2.pack(side = 'left')
+        self.text2.pack(side = 'right')
+        self.submit1.pack()
+
+        # Pack frames
+        self.top_frame.pack()
+        self.mid_frame.pack()
+        self.bottom_frame.pack()
+
+        # Enter tkinter main loop.
+        tkinter.mainloop()
+
+    def getString(self):
+        sub1 = str(self.text1.get())
+        str1 = str(self.text2.get())
+        
+        # Create an instanace of calu_bot
+        obj = calu_bot.login()
+        calu_bot.bot(obj, sub1, str1)

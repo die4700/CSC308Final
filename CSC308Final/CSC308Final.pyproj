@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fca49a21-f8f0-454d-b93d-95d5e9ec8fa5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>gui.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>CSC308Final</Name>
     <RootNamespace>CSC308Final</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,7 +29,13 @@
     <Compile Include="credentials.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="getStrings.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="gui.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
