@@ -19,10 +19,3 @@ def login():
                 client_secret = credentials.client_secret,
                 user_agent = "CalU Python bot test v0.1")
     return obj
-
-# Function that searches for string within comments on /r/test
-def bot(obj, sub1, str1):
-
-    for comment in obj.subreddit(sub1).comments(limit=25):
-        if str1 in comment.body:
-            print("Found the string: ", sub1, " in ", comment.body)

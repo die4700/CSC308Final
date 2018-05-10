@@ -29,7 +29,10 @@
     <Compile Include="credentials.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="getStrings.py">
+    <Compile Include="searchScore.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="searchSub.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="gui.py">
