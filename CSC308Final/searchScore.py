@@ -49,7 +49,8 @@ class scoreGUI:
         for submission in obj.subreddit(sub1).hot(limit=num1):
             score += submission.score
             average = (score/num1)
-        popupMessage = 'The average score of the top', num1, 'posts on /r/', sub1, 'is:', average
+
+        popupMessage = 'The average score of the top ' + str(num1) + ' hot posts on /r/ ' + str(sub1) + ' is: ' + str(average)
         
         tkinter.messagebox.showinfo('Average', popupMessage)
 

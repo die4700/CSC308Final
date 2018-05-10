@@ -56,7 +56,7 @@ class commentGUI:
             if str1 in comment.body:
                 counter += (counter + 1)
         
-        popupMessage = 'Found', str1, counter, 'times in /r/', sub1
+        popupMessage = 'Found ' + str(str1) + ' ' + str(counter) + ' times in /r/' + str(sub1)  
         
         tkinter.messagebox.showinfo('Search', popupMessage)
 
